@@ -8,6 +8,7 @@ if operation != "+":
         if operation != "/":
             if operation != "*":
                  print("Please choose a valid operation")
+                 operation = str(input("enter your operation '+, -, *, /': \n"))
 # calculation 
 if operation == "+":
     result = num1+num2
