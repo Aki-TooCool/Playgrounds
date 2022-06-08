@@ -1,14 +1,14 @@
 # Calculator made in Python
 num1 = float(input("enter your first number: \n"))
 num2 = float(input("enter your second number: \n"))
-operation = str(input("enter your operation '+, -, *, /': \n"))
+operation = str(input("enter your operation '+, -, *, /' \n"))
 # if user types the wrong operation
 if operation != "+":
     if operation != "-":
         if operation != "/":
             if operation != "*":
                  print("Please choose a valid operation")
-                 operation = str(input("enter your operation '+, -, *, /': \n"))
+                 operation = str(input("enter your valid operation '+, -, *, /' \n"))
 # calculation 
 if operation == "+":
     result = num1+num2
