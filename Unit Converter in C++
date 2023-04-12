@@ -1,0 +1,177 @@
+#include <iostream>
+#include <unistd.h>
+using namespace std;
+
+int main() {
+    
+    cout << "This programme converts various units." << endl ;
+    sleep(0.5);
+    cout << "Select the number to carry out the corresponding conversion." << endl;
+    sleep(0.5);
+    
+    cout << "1: " << "MPH to KMPH" << endl;
+    cout << "2: " << "KMPH to MPH" << endl;
+    cout << "3: " << "C to F" << endl;
+    cout << "4: " << "F to C" << endl;
+    cout << "5: " << "cm to in" << endl;
+    cout << "6: " << "in to cm" << endl;
+    cout << "7: " << "L to gal" << endl;
+    cout << "8: " << "gal to L" << endl;
+    cout << "9: " << "KGS to lbs" << endl;
+    cout << "10: " << "lbs to KGS" << endl << endl;
+    sleep(0.5);
+    
+    
+    
+    int num;
+    cout << "Please enter the number:  ";
+    cin >> num;
+  
+//  MPH to KMPH
+    if (num == 1){
+        cout << "MPH to KMPH" << endl;
+        sleep(0.5);
+        double val;
+        cout << "Enter value:  ";
+        cin >> val;
+        cout << endl << val << " MPH = " << val*1.609 << " KMPH" << endl << endl ;
+        }
+// KMPH to MPH
+   else if (num == 2){
+        cout << "KMPH to MPH" << endl;
+        sleep(0.5);
+        double val;
+        cout << "Enter value:  ";
+        cin >> val;
+        cout << endl << val << " KMPH = " << val*0.621371 << " MPH" << endl << endl ;
+        }
+
+// C to F
+   else if (num == 3){
+        cout << "C to F" << endl;
+        sleep(0.5);
+        double val;
+        cout << "Enter value:  ";
+        cin >> val;
+        cout << endl << val << "ºC = " << (val * 9/5) + 32 << "ºF" << endl << endl ;
+        }
+    
+// F to C
+    else if (num == 4){
+        cout << "F to C" << endl;
+        sleep(0.5);
+        double val;
+        cout << "Enter value:  ";
+        cin >> val;
+        cout << endl << val << "ºF = " << (val - 32) * 5/9 << "ºC" << endl << endl ;
+        }
+    
+// cm to in
+  else if (num == 5){
+        cout << "cm to in" << endl;
+        sleep(0.5);
+        double val;
+        cout << "Enter value:  ";
+        cin >> val;
+        cout << endl << val << " cm = " << val/2.54 << " in" << endl << endl ;
+        }
+    
+// in to cm
+    else if (num == 6){
+        cout << "in to cm" << endl;
+        sleep(0.5);
+        double val;
+        cout << "Enter value:  ";
+        cin >> val;
+        cout << endl << val << " in = " << val*2.54 << " cm" << endl << endl ;
+        }
+    
+// L to gal
+   else if (num == 7){
+        cout << "L to gal" << endl;
+        sleep(0.5);
+        double val;
+        cout << "Enter value:  ";
+        cin >> val;
+        cout << endl << val << " L = " << val/3.785 << " Gallons" << endl << endl ;
+        }
+    
+// gal to L
+   else if (num == 8){
+        cout << "gal to L" << endl;
+        sleep(0.5);
+        double val;
+        cout << "Enter value:  ";
+        cin >> val;
+        cout << endl << val << " Gallons = " << val*3.785 << " L" << endl << endl ;
+        }
+    
+// KGS to lbs
+   else if (num == 9){
+        cout << "KG to lbs" << endl;
+        sleep(0.5);
+        double val;
+        cout << "Enter value:  ";
+        cin >> val;
+        cout << endl << val << " KG = " << val*2.205 << " lbs" << endl << endl ;
+        }
+    
+// lbs to kgs
+  else  if (num == 10){
+        cout << "lbs to KG" << endl;
+        sleep(0.5);
+        double val;
+        cout << "Enter value:  ";
+        cin >> val;
+        cout << endl << val << " lbs = " << val/2.205 << " KG" << endl << endl ;
+        }
+    
+    
+// info desk
+       else if (num == 0){
+            sleep(0.5);
+            cout << endl << "Created by Akhil in C++" << endl << endl;
+            sleep(1);
+            cout << "Press any key to exit:  ";
+            string moreinfo;
+            cin >> moreinfo;
+            
+            if (moreinfo == "*"){
+                sleep(0.5);
+                cout << "The values following the decimal point are approximations given by the formula used for the conversion." << endl;
+                    
+                }
+           
+                }
+    
+    
+// if number not between 0 and 10
+    else  {
+        cout << "Please enter a value between 1 and 10." << endl;
+        sleep(0.5);
+        cout << "More conversions coming soon..." << endl;
+        sleep(1);
+        cout << "Do you want to restart the programme? Y/N:  ";
+        string choice;
+        cin >> choice;
+        if(choice == "Y" || choice == "y") {
+            sleep(1);
+            cout << "\nRestarting Programme";
+            sleep(1);
+            cout << ".";
+            sleep(1);
+            cout << ".";
+            sleep(1);
+            cout << ".";
+            sleep(0.1);
+            cout << "   \n \n";
+            sleep(2);
+        
+            main();
+            
+        }
+    }
+
+    return 0;
+}
+
