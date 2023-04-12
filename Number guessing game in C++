@@ -53,12 +53,12 @@ int main() {
                 cout << "Do you want to play again?(Y/N)  ";
                 string res;
                 cin >> res;
-                if(res == "Y" ||res == "y" || res == "Yes" || res == "yes" || res == "Yea" || res == "yea" || res == "YES" || res == "OK" || res == "ok" || res == "yup" || res == "Yup" || res == "YUP" || res == "Fine" || res == "fine" || res == "alright" || res == "Alright" || res == "Sure" || res == "sure" || res == "SURE" || res == "sí" || res == "Sí" || res == "si" || res == "Si" || res == "SI" || res == "yEs" || res == "YeS" || res == "YEs" || res == "yeS" || res == "yed" || res == "Yed" || res == "ye" || res == "Ye" || res == "YE"){
+                if(res == "Y" ||res == "y" || res == "Yes" || res == "yes"){
                     cout << "Restarting..." << endl << endl << endl;
                     main();
                 }
                 else{
-                    cout << "Thank You for playing" << endl << endl;
+                    cout << "Thank You for playing." << endl << endl;
                 }
             
             }
@@ -147,12 +147,12 @@ int main() {
                 cout << "Do you want to play again?(Y/N)  ";
                 string res;
                 cin >> res;
-                if(res == "Y" ||res == "y" || res == "Yes" || res == "yes" || res == "Yea" || res == "yea" || res == "YES" || res == "OK" || res == "ok" || res == "yup" || res == "Yup" || res == "YUP" || res == "Fine" || res == "fine" || res == "alright" || res == "Alright" || res == "Sure" || res == "sure" || res == "SURE" || res == "sí" || res == "Sí" || res == "si" || res == "Si" || res == "SI" || res == "yEs" || res == "YeS" || res == "YEs" || res == "yeS" || res == "yed" || res == "Yed" || res == "ye" || res == "Ye" || res == "YE"){
+                if(res == "Y" ||res == "y" || res == "Yes" || res == "yes"){
                     cout << "Restarting..." << endl << endl << endl;
                     main();
                 }
                 else{
-                    cout << "Thank You for playing" << endl << endl;
+                    cout << "Thank You for playing." << endl << endl;
                 }
             }
             // If user runs out of guesses
@@ -240,7 +240,7 @@ int main() {
 // cout << num << endl; // debug
         
         int guess;
-        int numguess = 23;
+        int numguess = 14;
         bool haschance = true; // Add a boolean variable to track whether the user has a second chance
         cout << "Hard: (1-1000)" << endl;
         cout << "I'm thinking of a number between 1 and 1000. Can you guess what it is?" << endl << endl;
@@ -261,23 +261,23 @@ int main() {
                 cout << "Do you want to play again?(Y/N)  ";
                 string res;
                 cin >> res;
-                if(res == "Y" ||res == "y" || res == "Yes" || res == "yes" || res == "Yea" || res == "yea" || res == "YES" || res == "OK" || res == "ok" || res == "yup" || res == "Yup" || res == "YUP" || res == "Fine" || res == "fine" || res == "alright" || res == "Alright" || res == "Sure" || res == "sure" || res == "SURE" || res == "sí" || res == "Sí" || res == "si" || res == "Si" || res == "SI" || res == "yEs" || res == "YeS" || res == "YEs" || res == "yeS" || res == "yed" || res == "Yed" || res == "ye" || res == "Ye" || res == "YE"){
+                if(res == "Y" ||res == "y" || res == "Yes" || res == "yes"){
                     cout << "Restarting..." << endl << endl << endl;
                     main();
                 }
                 else{
-                    cout << "Thank You for playing" << endl << endl;
+                    cout << "Thank You for playing." << endl << endl;
                 }
             }
             // If user runs out of guesses
             if(numguess < 0 && haschance){
                 haschance = false;
                 cout << "Oops, you ran out of guesses!" << endl;
-                cout << "Enter the code to get 9 more guesses: ";
+                cout << "Enter the code to get 7 more guesses: ";
                 string code;
                 cin >> code;
                 if(code == codes[2]){
-                    numguess = numguess + 9;
+                    numguess = numguess + 7;
                     
                 }
                 else{
@@ -379,7 +379,7 @@ int main() {
 // cout << num << endl; // debug
             
             int guess;
-            int numguess = 29;
+            int numguess = 16;
             bool haschance = true; // Add a boolean variable to track whether the user has a second chance
             cout << "Super Hard: (1-10000)" << endl;
             cout << "I'm thinking of a number between 1 and 10000. Can you guess what it is?" << endl << endl;
@@ -400,23 +400,23 @@ int main() {
                     cout << "Do you want to play again?(Y/N)  ";
                     string res;
                     cin >> res;
-                    if(res == "Y" ||res == "y" || res == "Yes" || res == "yes" || res == "Yea" || res == "yea" || res == "YES" || res == "OK" || res == "ok" || res == "yup" || res == "Yup" || res == "YUP" || res == "Fine" || res == "fine" || res == "alright" || res == "Alright" || res == "Sure" || res == "sure" || res == "SURE" || res == "sí" || res == "Sí" || res == "si" || res == "Si" || res == "SI" || res == "yEs" || res == "YeS" || res == "YEs" || res == "yeS" || res == "yed" || res == "Yed" || res == "ye" || res == "Ye" || res == "YE"){
+                    if(res == "Y" ||res == "y" || res == "Yes" || res == "yes"){
                         cout << "Restarting..." << endl << endl << endl;
                         main();
                     }
                     else{
-                        cout << "Thank You for playing" << endl << endl;
+                        cout << "Thank You for playing." << endl << endl;
                     }
                 }
                 // If user runs out of guesses
                 if(numguess < 0 && haschance){
                     haschance = false;
                     cout << "Oops, you ran out of guesses!" << endl;
-                    cout << "Enter the code to get 12 more guesses: ";
+                    cout << "Enter the code to get 8 more guesses: ";
                     string code;
                     cin >> code;
                     if(code == codes[3]){
-                        numguess = numguess + 12;
+                        numguess = numguess + 8;
                         
                     }
                     else{
