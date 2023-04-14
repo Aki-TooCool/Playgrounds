@@ -1,1 +1,183 @@
+// Created by Akhil in C++
+// 14.04.2023
 
+
+
+#include <iostream>
+#include <unistd.h>
+using namespace std;
+
+int main() {
+
+    cout << "Choose your operation:" << endl;
+    cout << "1)  Addition        +" << endl;
+    cout << "2)  Subtraction     -" << endl;
+    cout << "3)  Multiplication  *" << endl;
+    cout << "4)  Division        /" << endl;
+    cout << "5)  Powers          ^" << endl;
+    cout << "6)  Roots          -^" << endl;
+    
+    
+    
+    string operation;
+    cout << "Enter your operation: ";
+    cin >> operation;
+    
+// Addition
+    if(operation == "1" || operation == "+" || operation == "Add" || operation == "add"){
+        double num1;
+        double num2;
+        double result;
+        cout << "(Addition)" << endl;
+        cout << "Enter your first number:  ";
+        cin >> num1;
+        cout << "Enter your second number:  ";
+        cin >> num2;
+        result = num1 + num2;
+        cout << num1 << " + " << num2 << " = " << result << endl << endl;
+    }
+    
+// Subtraction
+    else if(operation == "2" || operation == "-" || operation == "Sub" || operation == "sub"){
+        double num1;
+        double num2;
+        double result;
+        cout << "(Subtraction)" << endl;
+        cout << "Enter your first number:  ";
+        cin >> num1;
+        cout << "Enter your second number:  ";
+        cin >> num2;
+        result = num1 - num2;
+        cout << num1 << " - " << num2 << " = " << result << endl << endl;
+    }
+    
+    
+// Multiplication
+      else  if(operation == "3" || operation == "*" || operation == "Mul" || operation == "mul"){
+            double num1;
+            double num2;
+            double result;
+            cout << "(Multiplication)" << endl;
+            cout << "Enter your first number:  ";
+            cin >> num1;
+            cout << "Enter your second number:  ";
+            cin >> num2;
+            result = num1 * num2;
+            cout << num1 << " * " << num2 << " = " << result << endl << endl;
+        }
+        
+// Division
+    else  if(operation == "4" || operation == "/" || operation == "Div" || operation == "div" || operation == "÷"){
+         double num1;
+         double num2;
+         double result;
+         cout << "(Division)" << endl;
+         cout << "Enter your first number:  ";
+         cin >> num1;
+         cout << "Enter your second number:  ";
+         cin >> num2;
+         result = num1 / num2;
+         cout << num1 << " ÷ " << num2 << " = " << result << endl << endl;
+            }
+    
+// Powers
+        else  if(operation == "5" || operation == "^" || operation == "Pow" || operation == "pow" || operation == "Power"){
+             double num1;
+             double num2;
+             double result;
+             cout << "(Powers)" << endl;
+             cout << "Enter your first number:  ";
+             cin >> num1;
+             cout << "Enter your second number:  ";
+             cin >> num2;
+             result = pow(num1,num2);
+             cout << num1 << " ^" << num2 << " = " << result << endl << endl;
+                }
+                
+
+// Roots
+           else if(operation == "6" || operation == "-^" || operation == "Root" || operation == "root" || operation == "R" || operation == "r"){
+                double num1;
+                double num2;
+                double result;
+                cout << "(Roots)" << endl;
+                cout << "Enter your first number:  ";
+                cin >> num1;
+                cout << "Enter your second number:  ";
+                cin >> num2;
+                result = pow(num1,1/num2);
+                 cout << num2 << "√ " << num1 << " = " << result << endl << endl;
+                    }
+    
+// help desk
+   else if(operation == "--Help" || operation == "--help" || operation == "-H" || operation == "-h"){
+        int help_choice;
+        cout << endl << "Welcome to the Help Desk of the program!" << endl << endl;
+        
+        
+        cout << "1)  View all possible operations" << endl;
+        cout << "2)  Changelog" << endl;
+        cout << "3)  View Source code" << endl;
+        cout << "4)  More info" << endl;
+        
+        cout << "Enter your choice:  ";
+        cin >> help_choice;
+        
+        
+/* All operations */   if(help_choice == 1){
+            cout << "All possible operations:" << endl << endl;
+            cout << "Sno Operation    Symbol    function" << endl << "-------------------------------------------" << endl;
+            cout << "1)  Addition        +   Adds the two numbers." << endl;
+            cout << "2)  Subtraction     -   Subtracts the two numbers." << endl;
+            cout << "3)  Multiplication  *   Multiplies the two numbers." << endl;
+            cout << "4)  Division        /   Divides the first number with the second number." << endl;
+            cout << "5)  Powers          ^   Finds the power of the first number to the power of the second number." << endl;
+            cout << "6)  Roots          -^   Finds the second number's root of the first number." << endl << endl;
+            cout << "To use these operations, just type the corresponding symbol." << endl << endl;
+        }
+        
+/* Changelog */ else  if(help_choice == 2){
+        cout << " \n No changelog yet!" << endl;
+        cout << "Created on 14.04.2023" << endl << endl;
+                   
+                }
+        
+/* Source code */  else if(help_choice == 3){
+            cout << "\n Source code available on github!" << endl;
+            cout << "link:  https://github.com/Aki-TooCool/Playgrounds/blob/main/Simple%20Calculator%20in%20C%2B%2B" << endl << endl;
+                        }
+        
+/* More info */ else  if(help_choice == 4){
+                    cout << "\nCreated by Akhil in C++" << endl;
+                    cout << "Date: 14.04.2023 \nDescription: Simple calculator in C++ \nTime taken: 1Hr \n" << endl << endl;
+                                }
+    
+        
+else{
+    cout << "Please choose from the given options." << endl << endl;
+    
+}
+        
+        
+    }
+    
+    
+   else{
+       cout << "Please choose from the given options." << endl;
+       cout << "Restarting";
+       sleep(1);
+       cout << ".";
+       sleep(1);
+       cout << ".";
+       sleep(1);
+       cout << "." << endl << endl;
+       usleep(50000);
+       main();
+   }
+    
+    
+    
+    
+    
+    return 0;
+}
